@@ -1,0 +1,39 @@
+#nav-bar {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: #00a087;
+  color: #e8fdff;
+  padding-left: 2em;
+  padding-right: 2em;
+  z-index: 2;
+}
+
+#nav-bar .logo {
+  height: 80px;
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+}
+
+#nav-bar .header {
+  float: left;
+  line-height: 80px;
+  font-size: 200%;
+}
+
+#nav-bar input {
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 5px;
+  position: absolute;
+  right: 1em;
+  margin-top: 0.5em;
+  display: inline-block;
+  height: 3em;
+  color: #c0c0c0;
+}
+
+#nav-bar input:hover {
+  color: black;
+}

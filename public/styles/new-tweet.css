@@ -1,0 +1,38 @@
+main .new-tweet {
+  border: solid #c0c0c0 1px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+main form {
+  position: relative;
+  width: 95%;
+  margin: auto;
+}
+
+main textarea {
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  margin-bottom: 0.1em;
+  width: 100%;
+}
+
+.new-tweet h2 {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  border-bottom: solid black 1px;
+}
+
+main [value="Tweet"] {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+main .counter {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0.7em;
+}
