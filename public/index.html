@@ -57,7 +57,11 @@
         $('input[value="Compose"]').on('click', function(){
           $(this).parent().siblings("main").children('.new-tweet').slideToggle();
           $(this).parent().siblings("main").find('textarea').focus();
-        })
+          // if (!$(this).is(":visible")){
+            $('body').scrollTop(0);
+          // }
+          });
+
 
       });
     </script>
