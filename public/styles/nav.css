@@ -22,7 +22,7 @@
   font-size: 200%;
 }
 
-#nav-bar input {
+#nav-bar button {
   background-color: white;
   border: solid 1px black;
   border-radius: 5px;
@@ -34,6 +34,6 @@
   color: #c0c0c0;
 }
 
-#nav-bar input:hover {
+#nav-bar button:hover {
   color: black;
 }

@@ -57,7 +57,7 @@
 
         });
 
-        $('input[value="Compose"]').on('click', function(){
+        $('button[value="Compose"]').on('click', function(){
           $(this).parent().siblings("main").children('.new-tweet').slideToggle();
           $(this).parent().siblings("main").find('textarea').focus();
           // if (!$(this).is(":visible")){
@@ -76,7 +76,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" width="80px" height="80px">
       <span class="header">Tweeter</span>
-      <input type="button" value="Compose">
+      <button value="Compose"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
