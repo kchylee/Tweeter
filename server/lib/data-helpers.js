@@ -1,12 +1,7 @@
 "use strict";
 
-
-// Defines helper functions for saving and getting tweets, using the database `db`
 module.exports = function makeDataHelpers(db) {
-
-
   return {
-
     // Saves a tweet to `db`
     saveTweet: function(newTweet, callback) {
         db.collection('tweets').insertOne(newTweet);
@@ -15,17 +10,14 @@ module.exports = function makeDataHelpers(db) {
 
     // Get all tweets in `db`, sorted by newest first
     getTweets: function(callback) {
-      db.collection('tweets').find().toArray((err, results) => {
-
+      db.collection('tweets').find().toArray((err, tweets) => {
         if (err){
         return callback(err);
         }
-
-        console.log(results);
         const sortNewestFirst = (a, b) => a.created_at - b.created_at;
-        callback(null, results.sort(sortNewestFirst));
-      });
+        callback(null, tweets.sort(sortNewestFirst));
+      })
     }
   }
+}
 
-};

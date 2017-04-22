@@ -38,9 +38,9 @@
       $(document).ready(function(){
         $('form').on('submit', function(event){
           event.preventDefault();
-          if($(this).children('textarea').val().length == ""){
+          if($(this).children('textarea').val().trim().length == ""){
             alert("Input Required");
-          }else if($(this).children('textarea').val().length > 140){
+          }else if ($(this).children('textarea').val().length > 140){
             alert("Tweet surpassed length restriction.");
           }else{
             $.ajax({
@@ -51,7 +51,10 @@
                 loadTweets();
               }
             });
+            $(this).trigger("reset");
+            $(this).children(".counter").text(140);
           }
+
         });
 
         $('input[value="Compose"]').on('click', function(){
