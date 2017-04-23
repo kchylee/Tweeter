@@ -32,7 +32,6 @@
   vertical-align: top;
   font-size: 1.2em;
   overflow-wrap: break-word;
-
 }
 
 .tweet .acct {
@@ -66,16 +65,6 @@
   visibility: hidden;
 }
 
-.tweet .fa-heart {
+.fa-heart, .fa-flag, .fa-retweet {
   float: right;
 }
-
-.tweet .fa-flag {
-  float: right;
-}
-
-.tweet .fa-retweet {
-  float: right;
-}
-
-

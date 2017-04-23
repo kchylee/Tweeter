@@ -23,15 +23,29 @@ body {
 }
 
 main {
-  width: 450px;
-  padding-top: 140px;
-  padding-bottom: 140px;
-  padding-left: 2em;
-  padding-right: 2em;
+  width: 44%;
+  padding: 140px 2em 140px 2em;
   margin: auto;
   background-color: white;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+@media (max-width: 768px) {
+  nav {
+    height: 10vh;
+  }
+  nav .header {
+    display: none;
+  }
+  nav .logo {
+    text-align: center;
+  }
+  main {
+    width: 90%;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .new-tweet {
+    height: 10em;
+  }
+}

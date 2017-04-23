@@ -51,14 +51,11 @@ function loadTweets(){
       url: "http://localhost:8080/tweets",
       dataType: "json",
       success: function(data){
-
           renderTweets(data);
-
-
-
       }
     });
-  }
+}
+
 $(document).ready(function(){
   loadTweets();
 });
